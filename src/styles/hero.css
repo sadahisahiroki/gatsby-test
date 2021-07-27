@@ -1,0 +1,23 @@
+.hero {
+  margin: 10rem 0;
+}
+
+.hero-text {
+  font-size: calc(2.4rem + 1.5vw);
+  line-height: 1.2;
+}
+
+.hero-author {
+  display: flex;
+}
+
+.hero-author-image {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.hero-autor-text {
+  color: #595959;
+  margin: 0 0 0 1rem;
+}

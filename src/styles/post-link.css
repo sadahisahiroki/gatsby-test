@@ -1,0 +1,8 @@
+.post-link {
+  display: grid;
+  margin: 5rem 0;
+}
+
+.post-link-body {
+  text-overflow: ellipsis;
+}

@@ -3,6 +3,15 @@
   margin: 5rem 0;
 }
 
+.post-link-thumbnail {
+  max-width: 300px;
+}
+
+.post-link-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
 .post-link-body {
   text-overflow: ellipsis;
 }

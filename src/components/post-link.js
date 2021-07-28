@@ -1,20 +1,21 @@
 import React from "react"
 import "../styles/post-link.css"
 
-const RANDOM_IMG = "https://source.unsplash.com/collection/175083/640x360"
+const PostLink = ({post}) => {
+  const { title, updatedAt, thumbnail } = post
+  const excerpt = post.excerpt.excerpt
 
-const PostLink = () => {
   return (
     <div className="post-link">
-      <div>
-        <img src={RANDOM_IMG} className="post-link-image" alt="post-cover" />
+      <div class="post-link-thumbnail">
+        <img src={thumbnail.file.url} className="post-link-image" alt={thumbnail.title} />
       </div>
       <div className="post-link-text">
-        <h2>ブログタイトル</h2>
+        <h2>{title}</h2>
         <p class="post-link-date">
-          <time datetime="2021-07-15">2021年7月15日</time>
+          <time datetime={updatedAt}>{updatedAt}</time>
         </p>
-        <p class="post-link-body">ブログ本文</p>
+        <p class="post-link-body">{excerpt}</p>
       </div>
     </div>
   )
